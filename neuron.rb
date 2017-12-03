@@ -58,7 +58,8 @@ class Neuron < Formula
     if build.with? "inter-views"
       args << "--with-iv=#{Formula["inter-views"].opt_prefix}"
     else
-      args << "--without-iv"
+      args << "--without-x"
+      args << "--disable-rx3d"
     end
 
     # NB: autotools need to be run if building from a GitHub commit.
