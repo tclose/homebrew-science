@@ -26,7 +26,7 @@ class Neuron < Formula
   depends_on "bison" => :build
 
   # Dependencies of the simulator itself
-  depends_on "inter-views" => :recommended
+  depends_on "inter-views" => :optional
   depends_on :mpi => :optional
   depends_on :python if MacOS.version <= :snow_leopard
   depends_on :python3 => :optional
