@@ -106,7 +106,7 @@ class Nest < Formula
     inreplace bin/"nest-config",
         %r{#{HOMEBREW_REPOSITORY}/Library/Homebrew/shims.*/super},
         "#{HOMEBREW_PREFIX}/bin",
-        audit_result=FALSE
+        FALSE
   end
 
   test do
